@@ -4,7 +4,11 @@ Rowing Calculator
 
 ## Features
 
-* Rowing Calculator
+* Web API
+  * Erg
+    * Split - Time - Distance Conversion
+    * Weight Adjusted Calculator
+    * Split - Watt Conversion
 
 ## Upcoming Features
 
