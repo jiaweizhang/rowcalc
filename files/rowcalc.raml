@@ -1,0 +1,98 @@
+#%RAML 0.8
+title: RowCalc API
+version: v1
+baseUri: https://rowcalc.appspot.com/api
+mediaType:  application/json
+/splittimedistance:
+	displayName: Conversion Type
+	/splittimetodistance:
+		/?split={split}&time={time}:
+			uriParameters:
+				split:
+					type: string
+				time:
+					type: string
+		get:
+			responses:
+				200:
+					body:
+						application/json:
+							schema: |
+							{
+								"$schema": "http://json-schema.org/schema",
+								"split": 
+									{
+										"minutes": { "type": "integer" },
+										"seconds": { "type": "integer" }
+									},
+								"time":
+									{
+										"minutes": { "type": "integer" },
+										"seconds": { "type": "integer" }
+									},
+								"distance":
+									{
+										"meters" : { "type": "integer"}
+									}
+							}
+	/splitdistancetotime:
+		/?split={split}&distance={distance}:
+			uriParameters:
+				split:
+					type: string
+				time:
+					type: string
+		get:
+			responses:
+				200:
+					body:
+						application/json:
+							schema: |
+							{
+								"$schema": "http://json-schema.org/schema",
+								"split": 
+									{
+										"minutes": { "type": "integer" },
+										"seconds": { "type": "integer" }
+									},
+								"time":
+									{
+										"minutes": { "type": "integer" },
+										"seconds": { "type": "integer" }
+									},
+								"distance":
+									{
+										"meters" : { "type": "integer"}
+									}
+							}
+	/timedistancetosplit:
+		/?time={time}&distance={distance}:
+			uriParameters:
+				split:
+					type: string
+				time:
+					type: string
+		get:
+			responses:
+				200:
+					body:
+						application/json:
+							schema: |
+							{
+								"$schema": "http://json-schema.org/schema",
+								"split": 
+									{
+										"minutes": { "type": "integer" },
+										"seconds": { "type": "integer" }
+									},
+								"time":
+									{
+										"minutes": { "type": "integer" },
+										"seconds": { "type": "integer" }
+									},
+								"distance":
+									{
+										"meters" : { "type": "integer"}
+									}
+							}
+
