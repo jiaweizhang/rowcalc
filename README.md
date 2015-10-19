@@ -1,24 +1,14 @@
-# Liftmo
+# RowCalc
 
-Desktop site at http://liftmo.com 
-<br/>
-Mobile site at http://m.liftmo.com ([Github](https://github.com/jiaweizhang/m.liftmo.com))
+Rowing Calculator
 
 ## Features
 
-* Registration, login, updating profile by API call
-* Add, fetch lifts by API call
+* Rowing Calculator
 
 ## Upcoming Features
 
-* Graphical signup, login, profile updating
-* Email verification
-* Graphical lift tracking
-
 ## Development
-
-* [Developer Guide](http://liftmo.com/dev)
-* [API and Database Schemas](http://liftmo.com/api)
 
 ## About
 
